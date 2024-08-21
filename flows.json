@@ -1,1 +1,46 @@
-[]
+[
+    {
+        "id": "fdcaf45991ee2d10",
+        "type": "tab",
+        "label": "TEST2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d2f36bdf848ecb20",
+        "type": "function",
+        "z": "fdcaf45991ee2d10",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "15f1b1f518613304"
+            ]
+        ]
+    },
+    {
+        "id": "15f1b1f518613304",
+        "type": "debug",
+        "z": "fdcaf45991ee2d10",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 360,
+        "wires": []
+    }
+]
