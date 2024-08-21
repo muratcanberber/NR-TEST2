@@ -42,5 +42,109 @@
         "x": 500,
         "y": 360,
         "wires": []
+    },
+    {
+        "id": "42156e23402f71df",
+        "type": "comment",
+        "z": "fdcaf45991ee2d10",
+        "name": "dev branch",
+        "info": "",
+        "x": 160,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cdeec3eb0ff1b88c",
+        "type": "inject",
+        "z": "fdcaf45991ee2d10",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "15f1b1f518613304"
+            ]
+        ]
+    },
+    {
+        "id": "ffe56303b420d7e7",
+        "type": "function",
+        "z": "fdcaf45991ee2d10",
+        "name": "function 2",
+        "func": "msg.payload = \"Hello CodeWithMCB\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "869cf120def7a075"
+            ]
+        ]
+    },
+    {
+        "id": "869cf120def7a075",
+        "type": "debug",
+        "z": "fdcaf45991ee2d10",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f79b5d159784a36e",
+        "type": "inject",
+        "z": "fdcaf45991ee2d10",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "869cf120def7a075"
+            ]
+        ]
     }
 ]
