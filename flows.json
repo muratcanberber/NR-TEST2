@@ -146,5 +146,22 @@
                 "869cf120def7a075"
             ]
         ]
+    },
+    {
+        "id": "d0687f8c3b14abf0",
+        "type": "template",
+        "z": "fdcaf45991ee2d10",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 320,
+        "y": 560,
+        "wires": [
+            []
+        ]
     }
 ]
