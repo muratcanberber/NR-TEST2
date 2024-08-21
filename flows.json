@@ -12,7 +12,7 @@
         "type": "function",
         "z": "fdcaf45991ee2d10",
         "name": "function 1",
-        "func": "msg.payload = \"Hello World\"\nreturn msg;",
+        "func": "msg.payload = \"Hello CodeWithMCB\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
